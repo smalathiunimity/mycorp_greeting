@@ -30,6 +30,11 @@ function greeting_services_resource() {
     	),
 		'create' => array(
           'help' => 'Create Greeting Node.',
+		  'file' => array(
+				'type' => 'inc',
+				'module' => 'greeting',
+				'name' => 'includes/greeting.services',
+			),
           'callback' => '_greeting_node_create',
           'access callback' => 'user_access',
           'access arguments' => array('access content'),
