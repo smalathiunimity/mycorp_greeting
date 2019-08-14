@@ -1,0 +1,7 @@
+name = Greeting Services
+description = WebService APIs for greeting content.
+core = 7.x
+package = Greeting
+project = greeting
+dependencies[] = services
+dependencies[] = rest_server

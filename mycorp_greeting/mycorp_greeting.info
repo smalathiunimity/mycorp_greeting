@@ -1,0 +1,17 @@
+name = Mycorp Greeting
+description = Mycorp Greeting
+core = 7.x
+package = Features
+version = 7.x-2.0
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = image
+dependencies[] = rest_server
+dependencies[] = services
+dependencies[] = services_basic_auth
+features[ctools][] = services:services:3
+features[features_api][] = api:2
+features[field_base][] = field_image
+features[field_instance][] = node-greeting-field_image
+features[node][] = greeting
+features[services_endpoint][] = greeting
